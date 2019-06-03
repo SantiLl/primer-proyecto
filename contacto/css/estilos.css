@@ -9,10 +9,11 @@
 /* DISEÑO */
 
 body {
-    background-image: url("../../imagenes/background.jpg");
+    background-image: url("../../imagenes/backgroundmobile.png");
     background-color: #cccccc;
     background-attachment: fixed;
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .sidebarleft {
@@ -27,7 +28,7 @@ body {
 
 .menu a {
     color: rgba(255, 255, 255, 0.089);
-    font-size: 11px;
+    font-size: 18px;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
 }
@@ -38,22 +39,26 @@ body {
 }
 
 .contacto {
-
+    -webkit-box-shadow: inset 0x 0px 100px 800px rgba(0, 0, 0, 0.527);
+    -moz-box-shadow: inset 0px 0px 100px 800px rgba(0,0,0,0.527);
+    box-shadow: inset 0px 0px 100px 800px rgba(0,0,0,0.527);
 }
 
-
+.contacto img {
+    width: 100%;
+}
 
 .contacto h1 {
     border-bottom: solid 1px;
     color: #AFB4B7;
-    font-size; 18px;
+    font-size; 25px;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
 }
 
 .titulo-contacto li {
     font-family: 'Sailec', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     text-align: left;
     color: #d7dde0;
 }
@@ -80,36 +85,63 @@ body {
     text-decoration: underline;
     }
 
-legend {
+fieldset legend p {
     border-bottom: solid 1px;
     color: #AFB4B7;
-    font-size; 18px;
+    font-size: 25px;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     }
 
-    legend {
-        border-bottom: solid 1px;
-        color: #AFB4B7;
-        font-size; 18px;
-        text-transform: uppercase;
-        font-family: 'Poppins', sans-serif;
-    }
-
-legend p {
+fieldset p {
     font-family: 'Sailec', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     text-align: left;
     color: #d7dde0;
 }
 
-.pie {
-
-}
-
 .pie p {
     font-family: 'Sailec', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
+    -webkit-box-shadow: inset 0x 0px 100px 800px rgba(0, 0, 0, 0.527);
+    -moz-box-shadow: inset 0px 0px 100px 800px rgba(0,0,0,0.527);
+    box-shadow: inset 0px 0px 100px 800px rgba(0,0,0,0.527)
 }
 
+/*POSICIONAMIENTO MOBILE FIRST */
+
+.sidebarleft img{
+    visibility: hidden;
+}
+
+.sidebarleft li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contacto {
+    padding-bottom: 6px;
+}
+
+.contacto img {
+    padding: 15px 20px;
+}
+
+.contacto h1 {
+    padding: 5px 20px 0px 15px;
+}
+
+.contacto .titulo-contacto {
+    padding-top: 10px;
+}
+
+.contacto .subtitulo-contacto {
+    padding-top: 2.5px;
+    padding-bottom: 5px;
+}
+
+.paddingfinal {
+    padding-bottom: 0px;
+}

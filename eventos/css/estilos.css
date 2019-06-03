@@ -9,82 +9,116 @@
 /* DISEÑO */
 
 body {
-background-image: url("../../imagenes/background.jpg");
-background-color: #cccccc;
-background-attachment: fixed;
-background-size: 100%;
-}
-
-.sidebarleft {
-
+    background-image: url("../../imagenes/backgroundmobile.png");
+    background-color: #cccccc;
+    background-attachment: fixed;
+    background-size: 100%;
 }
 
 .sidebarleft img {
-height: 83px;
-width: 100px;
-background-color: #cccccc;
+    height: 83px;
+    width: 100px;
+    background-color: #cccccc;
 }
 
 .menu a {
-color: rgba(255, 255, 255, 0.089);
-font-size: 11px;
-font-family: 'Poppins', sans-serif;
-text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.089);
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
 }
 
 .menu a:hover {
-color: #cccccc;
-background: #ffe4e1;   
+    color: #cccccc;
+    background: #ffe4e1;   
 }
 
-.news {
-
+.tour {
+    -webkit-box-shadow: inset 0x 0px 100px 800px rgba(0, 0, 0, 0.527);
+    -moz-box-shadow: inset 0px 0px 100px 800px rgba(0,0,0,0.527);
+    box-shadow: inset 0px 0px 100px 800px rgba(0,0,0,0.527);
 }
 
-
+.tour img {
+    width: 100%
+}
 
 .tour h1 {
-border-bottom: solid 1px;
-color: rgba(255, 255, 255, 0.2);
-font-size; 18px;
-text-transform: uppercase;
-font-family: 'Poppins', sans-serif;
+    border-bottom: solid 1px;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
 }
 
 .tour h1 span {
-color: #AFB4B7;
+    color: #AFB4B7;
 }
 
-.news h2 a {
-font-family: 'Sailec', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-font-size: 18px;
-color: #fff;
-}
-
-.tour td {
+.tour .fechas {
     font-family: 'Sailec', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 14px;
     text-align: left;
     color: #fff;
-    }
-
-.tour td a {
-font-family: 'Sailec', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-font-size: 14px;
-text-align: left;
-color: #fff;
 }
 
-.tour a:hover {
+.tour .fechas a {
+    font-family: 'Sailec', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    color: #fff;
+}
+
+.tour .fechas a {
     text-decoration: underline;
-    }
-
-.pie {
-
 }
 
 .pie p {
-font-family: 'Sailec', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-font-size: 12px;
-text-align: center;
+    font-family: 'Sailec', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    -webkit-box-shadow: inset 0x 0px 100px 800px rgba(0, 0, 0, 0.527);
+    -moz-box-shadow: inset 0px 0px 100px 800px rgba(0,0,0,0.527);
+    box-shadow: inset 0px 0px 100px 800px rgba(0,0,0,0.527)
+}
+
+/* POSICIONAMIENTO MOBLIE FIRST */
+
+.sidebarleft img{
+    visibility: hidden;
+}
+
+.sidebarleft li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tour {
+    padding-bottom: 90px;
+}
+
+.tour img {
+    padding: 15px 20px;
+}
+
+.tour h1 {
+    padding: 5px 20px 0px 15px;
+}
+
+.tour .fechas {
+    margin: 20px 9px;
+    padding: 10px 9px;
+    border-width: 1px;
+    border-color: #AFB4B7;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.tour .fechas li{
+    display: inline-block;
+}
+
+.tour .tablas {
+    
 }
